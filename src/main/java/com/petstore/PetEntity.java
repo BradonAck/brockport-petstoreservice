@@ -47,7 +47,7 @@ public class PetEntity extends AbstractPet
     {
 
         this(petType, cost, gender, 0, breed);
-     }
+    }
 
     /**
      * Constructor
@@ -137,7 +137,7 @@ public class PetEntity extends AbstractPet
         {
             System.out.println("Pet updated with new breed[" + super.breed + "]");
         }
-       //set the animal type
+        //set the animal type
         if(super.animalType.equals(AnimalType.UNKNOWN) &&
                 ! dataStorePetEntity.getAnimalType().equals(AnimalType.UNKNOWN))
         {
@@ -205,7 +205,7 @@ public class PetEntity extends AbstractPet
     }
     @Override
     public void setSkinType(Skin skin) {
-       super.skinType = skin;
+        super.skinType = skin;
     }
     @Override
     public Breed getBreed(){return super.breed;}
@@ -233,7 +233,7 @@ public class PetEntity extends AbstractPet
 
     public void setPetId(int storeId)
     {
-       this.petId = storeId;
+        this.petId = storeId;
     }
 
     public int getPetId()
@@ -248,6 +248,7 @@ public class PetEntity extends AbstractPet
     public AnimalType getAnimalType(){
         return super.animalType;
     }
+
 
 
     public String toString()
